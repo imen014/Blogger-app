@@ -1,0 +1,12 @@
+{% extends "authentication/base.html" %} 
+
+
+{% block content %}
+<h2>welcome</h2>
+{{  user.username }}<br/>
+<a href="{% url 'logout_user' %}">logout_user</a><br/>
+<a href="{% url 'image-blog-create' %}">create a blog with an image for description</a><br/>
+<a href="{% url 'get_my_blogs_and_images' %}">get my blogs and images</a>
+
+
+{% endblock content %}
